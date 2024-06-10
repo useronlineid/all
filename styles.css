@@ -1,3 +1,5 @@
+/* styles.css */
+
 /* การตั้งค่าพื้นฐาน */
 body {
     font-family: 'Arial', sans-serif;
@@ -8,6 +10,10 @@ body {
     height: 100vh;
     color: #333;
     background: #f0f0f0;
+    background-image: url('https://github.com/useronlineid/all/blob/main/168%20(1).jpg?raw=true'); /* เปลี่ยน path/to/your/background-image.jpg ให้เป็นที่อยู่ของรูปพื้นหลัง */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 header {
