@@ -66,9 +66,27 @@ document.addEventListener('DOMContentLoaded', function() {
             isUserLoggedIn = true;
             currentUserTimeout = user.timeout;
             incrementUserCount();
+            incrementTotalVisits();
             resetLogoutTimer(); // เริ่มจับเวลาเมื่อเข้าสู่ระบบสำเร็จ
         } else {
             errorMessage.textContent = "ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง";
         }
     });
+
+    // ฟังก์ชันสำหรับนับจำนวนผู้เข้าชมทั้งหมด
+    function incrementTotalVisits() {
+        let totalVisits = localStorage.getItem('totalVisits') || 0;
+        totalVisits++;
+        localStorage.setItem('totalVisits', totalVisits);
+        console.log(`จำนวนผู้เข้าชมทั้งหมด: ${totalVisits}`);
+    }
+
+    // แสดงจำนวนผู้เข้าชมทั้งหมดใน console
+    function showTotalVisits() {
+        let totalVisits = localStorage.getItem('totalVisits') || 0;
+        console.log(`จำนวนผู้เข้าชมทั้งหมด: ${totalVisits}`);
+    }
+
+    // เรียกฟังก์ชันแสดงจำนวนผู้เข้าชมทั้งหมดเมื่อโหลดหน้า
+    showTotalVisits();
 });
