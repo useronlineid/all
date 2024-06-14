@@ -26,6 +26,11 @@ header h1 {
     font-size: 2em;
 }
 
+header #user-count {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
 main {
     flex: 1;
     display: flex;
@@ -105,3 +110,15 @@ main {
     border-radius: 5px;
     text-align: center;
     transition: background 0.3s, transform 0.3s;
+    font-size: 1.2em;
+    font-weight: bold; /* ทำให้ตัวหนังสือหนาขึ้น */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.link-item:hover {
+    background: linear-gradient(135deg, #FFC700, #C8A200); /* ไล่สีทองเข้มขึ้นเมื่อ hover */
+    transform: translateY(-5px);
+}
+
+.link-item:active {
+    background: linear-gradient(135deg, #B8860B, #8B6508); /* ไล่สี
