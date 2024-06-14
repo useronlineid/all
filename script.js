@@ -67,13 +67,6 @@ document.addEventListener('DOMContentLoaded', function() {
             currentUserTimeout = user.timeout;
             incrementUserCount();
             resetLogoutTimer(); // เริ่มจับเวลาเมื่อเข้าสู่ระบบสำเร็จ
-
-            // ทำให้ลิงก์สามารถใช้งานได้
-            const links = document.querySelectorAll('.link-item');
-            links.forEach(link => {
-                const url = link.getAttribute('data-link');
-                link.setAttribute('href', url);
-            });
         } else {
             errorMessage.textContent = "ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง";
         }
