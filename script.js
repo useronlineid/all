@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // ตั้งค่า user และ password หลายคู่
     const validCredentials = [
         { username: "admin168", password: "123456" },
-        { username: "user2", password: "password2" },
+        { username: "dx", password: "164626" },
         { username: "user3", password: "password3" }
     ];
 
