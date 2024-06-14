@@ -35,7 +35,6 @@ document.addEventListener('DOMContentLoaded', function() {
     function incrementUserCount() {
         activeUsers++;
         updateUserCount();
-        showActiveUsers();
     }
 
     function decrementUserCount() {
@@ -43,16 +42,10 @@ document.addEventListener('DOMContentLoaded', function() {
             activeUsers--;
         }
         updateUserCount();
-        showActiveUsers();
     }
 
     function updateUserCount() {
         userCountElement.textContent = `จำนวนผู้ใช้งาน: ${activeUsers}`;
-    }
-
-    // ฟังก์ชันแสดงจำนวนผู้ใช้งานใน Console
-    function showActiveUsers() {
-        console.log(`จำนวนผู้ใช้งานปัจจุบัน: ${activeUsers}`);
     }
 
     // รีเซ็ตตัวจับเวลาเมื่อมีการคลิกหรือเคลื่อนเมาส์
